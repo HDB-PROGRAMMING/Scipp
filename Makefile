@@ -8,6 +8,11 @@ output:
 test:
 	@echo SCIPP TESTING
 	@echo -----------
+	@g++ -w tests/compile.cpp -o compile
+	@./compile
+	@rm compile
+	@# Compilation test
+
 	@g++ -w tests/macros.cpp -o macros
 	@./macros
 	@rm macros

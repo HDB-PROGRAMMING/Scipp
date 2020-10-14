@@ -7,7 +7,7 @@ typedef short char16;
 typedef int   char32;
 typedef long  char64;
 
-typedef char str[];
+typedef char* str;
 
 #endif
 //Scipp data types
