@@ -1,7 +1,15 @@
 #ifndef SCIPP_ELEMENTS
 #define SCIPP_ELEMENTS
 
-namespace elements {
+#include <stdio.h>
+#include <string>
+#include <list>
+using namespace std;
+
+#include "../types.h"
+#include "dll.h"
+
+DLL_EXPORT namespace elements {
 	class element {
 	protected:
 		string name;

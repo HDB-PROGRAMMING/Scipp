@@ -1,9 +1,6 @@
 output:
-	@echo NO TARGETS SPECIFIED!!
-	@echo Scipp Makefile
-	@echo ------------------
-	@echo
-	@exit 1
+	@make --file=lib/libraries.mak libs
+	@# Dlls build
 
 test:
 	@echo SCIPP TESTING
@@ -22,11 +19,6 @@ test:
 	@./types
 	@rm types
 	@# Data types test
-
-	@g++ -w tests/element.cpp -o element
-	@./element
-	@rm element
-	@# Elements test
 
 cpplog:
 	@cpp lib/Scipp.h

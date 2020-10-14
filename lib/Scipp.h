@@ -5,7 +5,7 @@
 #include "macros.h"
 #include "types.h"
 
-#include "elements.hpp"
+#include "import.h"
 
 #endif
 //Scipp header
