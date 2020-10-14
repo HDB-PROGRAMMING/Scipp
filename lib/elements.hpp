@@ -88,7 +88,7 @@ namespace elements {
 		//elCollection constructor
 
 		element get_element_by_name(string _name) {
-			list<element> ::iterator i;
+			/*list<element> ::iterator i;
 			element e;
 
 			for (i = this->elements.begin(); i != this->elements.end(); i++) {
@@ -97,7 +97,7 @@ namespace elements {
 				if (e.get_name() == _name) {
 					return e;
 				}
-			}
+			}*/
 		}
 	};
 }

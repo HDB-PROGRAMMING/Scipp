@@ -11,6 +11,9 @@ int main() {
 		char32 b = 'b';
 		char64 c = 'c';
 
+		var d = 0;
+		var e = NULL;
+
 		printf("%c%c%s\n", O, K, end);
 		return 0;
 
