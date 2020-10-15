@@ -2,7 +2,7 @@
 #define SCIPP_DLLS
 
 #ifdef _WIN32
- #define SCIPP_PATH "C:/Scipp/"
+ #define SCIPP_PATH "C:\\Scipp\\"
 #else
  #define SCIPP_PATH "/Scipp/"
 #endif

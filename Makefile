@@ -1,5 +1,6 @@
 output:
-	@make --file=lib/libraries.mak
+	@make --file=lib/dlls/dlls.mak
+	@make --file=lib/cli/scipp_cli.mak
 	@# Dlls build
 
 test:

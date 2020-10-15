@@ -1,6 +1,3 @@
-#ifndef SCIPP_ELEMENTS
-#define SCIPP_ELEMENTS
-
 #include <stdio.h>
 #include <string>
 #include <list>
@@ -109,5 +106,4 @@ DLL_EXPORT namespace elements {
 		}
 	};
 }
-#endif
-//Scipp element class
+//Scipp chemistry API

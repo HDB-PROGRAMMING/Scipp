@@ -8,8 +8,13 @@
 #include <vector>
 //Extern libraries
 
-#define SCIPP_MATHS     "libs/maths.dll"
-#define SCIPP_CHEMISTRY "libs/chemistry.dll"
+#ifdef _WIN32
+ #define SCIPP_MATHS     "libs\\maths.dll"
+ #define SCIPP_CHEMISTRY "libs\\chemistry.dll"
+#else
+ #define SCIPP_MATHS     "libs/maths.dll"
+ #define SCIPP_CHEMISTRY "libs/chemistry.dll"
+#endif
 //Scipp dlls
 
 #endif
