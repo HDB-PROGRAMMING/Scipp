@@ -6,7 +6,7 @@
 #include <list>
 using namespace std;
 
-#include "../types.h"
+#include "types.h"
 #include "dll.h"
 
 DLL_EXPORT namespace elements {

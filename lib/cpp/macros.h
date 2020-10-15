@@ -29,7 +29,12 @@
 #define len(arr)\
 	sizeof(arr) / sizeof(arr[0])
 
-#endif
+#define MAX(x, y)\
+	x > y ? x : y
+
+#define MIN(x, y)\
+	x < y ? x : y
+//Scipp macro funcs
 
 #define UP_KEY    72
 #define DOWN_KEY  80
@@ -50,4 +55,7 @@
 #define KEY_EIGHT 56
 #define KEY_NINE  57
 #define KEY_ZERO  58
+//Some keyboard keys
+
+#endif
 //Scipp macros

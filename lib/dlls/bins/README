@@ -1,0 +1,5 @@
+Scipp dynamic link libraries should be here, Scipp dlls list:
+	(*) chemistry.so - Chemistry utils for C++
+	(*) maths.so     - Maths constants and functions for C/C++, available with Scipp API for Python
+
+That's all in this directory.

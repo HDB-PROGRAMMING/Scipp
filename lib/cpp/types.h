@@ -1,6 +1,7 @@
 #ifndef SCIPP_TYPES
 #define SCIPP_TYPES
 
+typedef void   (*void_ptr)   (void);
 typedef void*  (**value_ptr) (void*);
 
 typedef int    (*int_ptr)    (int);
@@ -8,6 +9,7 @@ typedef int    (*int_ptr)    (int);
 typedef float  (*float_ptr)  (float);
 typedef double (*double_ptr) (double);
 
+typedef char   (*char_ptr)   (char);
 typedef char*  (**str_ptr)   (char*);
 //Function pointer data types
 

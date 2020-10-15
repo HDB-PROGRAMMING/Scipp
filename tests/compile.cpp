@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../lib/Scipp.h"
+#include "../lib/cpp/Scipp.h"
 
 int main() {
 	printf("OK!!\n");

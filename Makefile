@@ -1,5 +1,5 @@
 output:
-	@make --file=lib/libraries.mak libs
+	@make --file=lib/libraries.mak
 	@# Dlls build
 
 test:
@@ -19,6 +19,3 @@ test:
 	@./types
 	@rm types
 	@# Data types test
-
-cpplog:
-	@cpp lib/Scipp.h
