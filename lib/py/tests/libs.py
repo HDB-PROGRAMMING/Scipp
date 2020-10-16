@@ -3,7 +3,7 @@
 #
 # MIT Licensed
 
-import . as Scippy
+import scippy as Scippy
 import sys
 
 try:

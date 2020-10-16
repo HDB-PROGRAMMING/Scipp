@@ -2,5 +2,5 @@ output:
 	@python lib/py/setup.py sdist bdist_wheel
 
 test:
-	@cp scippy/__init__.py tests/
-	@python tests/libs.py
+	@cp lib/py/scippy/__init__.py lib/py/tests/scippy.py
+	@python lib/py/tests/libs.py

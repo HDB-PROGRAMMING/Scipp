@@ -18,12 +18,12 @@ int main(int argc, const char* argv[]) {
 		printf("\n");
 		printf("Set up Scipp environment\n");
 		FORE_COLOR_YELLOW;
-		printf("-install:\n");
+		printf("-init:\n");
 		printf("\t-cpp [path]: Set up Scipp for C++ in [path]\n");
 		printf("\t-py:         Set up Scipp for python\n");
 		FORE_COLOR_WHITE;
 
-	} else if (strcmp(argv[1], "install")) {
+	} else if (strcmp(argv[1], "init")) {
 		if (strcmp(argv[2], "cpp")) {
 			if (argc < 4) {
 				FORE_COLOR_RED;

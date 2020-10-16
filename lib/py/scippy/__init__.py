@@ -22,7 +22,7 @@ else:
 class scippy_lib:
 	lib = None
 
-	def __init__(self, lib: str):
+	def __init__(self, lib):
 		self.lib = cdll.LoadLibrary(SCIPP_PATH + lib)
 	#end
 
