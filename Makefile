@@ -3,9 +3,10 @@ output:
 	@make --file=lib/cli/scipp_cli.mak
 	@# Dlls build
 
+	@make --file=lib/py/scippy.mak
+	@# Scippy build
+
 test:
-	@echo SCIPP TESTING
-	@echo -----------
 	@g++ -w tests/compile.cpp -o compile
 	@./compile
 	@rm compile
@@ -20,3 +21,8 @@ test:
 	@./types
 	@rm types
 	@# Data types test
+
+	@echo ""
+
+	@make --file=lib/py/scippy.mak test
+	@# Scippy tests
