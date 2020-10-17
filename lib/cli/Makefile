@@ -1,5 +1,5 @@
 output:
-	@gcc -w lib/cli/scipp.c -o lib/bins/scipp
+	@gcc -w scipp.c -o ../bins/scipp
 
 run:
 	@gcc -w scipp.c -o scipp

@@ -1,9 +1,9 @@
 output:
-	@make --file=lib/dlls/dlls.mak
-	@make --file=lib/cli/scipp_cli.mak
+	@g++ -w -Wall -Wextra -O -ansi -pedantic -fPIC -shared lib/dlls/src/chemistry.hpp -o lib/bins/chemistry.so
+	@gcc -w lib/cli/scipp.c -o lib/bins/scipp
 	@# Dlls build
 
-	@make --file=lib/py/scippy.mak
+	@python lib/py/setup.py sdist bdist_wheel
 	@# Scippy build
 
 test:
@@ -24,5 +24,6 @@ test:
 
 	@echo ""
 
-	@make --file=lib/py/scippy.mak test
+	@cp lib/py/scippy/__init__.py lib/py/tests/scippy.py
+	@python lib/py/tests/libs.py
 	@# Scippy tests
