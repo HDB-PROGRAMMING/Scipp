@@ -16,7 +16,7 @@
 
 #elif defined(linux) || defined(__CYGWIN__)
 #define __OS__     "LINUX"
-#define SCIPP_PATH "~/Scipp"
+#define SCIPP_PATH "~/Scipp/"
 
 #define FORE_COLOR_BLACK  printf("\033[0;30m")
 #define FORE_COLOR_RED    printf("\033[31m")

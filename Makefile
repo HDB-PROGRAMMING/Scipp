@@ -24,6 +24,6 @@ test:
 
 	@echo ""
 
-	@cp lib/py/scippy/__init__.py lib/py/tests/scippy.py
-	@python lib/py/tests/libs.py
+	@# cp lib/py/scippy/__init__.py lib/py/tests/scippy.py
+	@# python lib/py/tests/libs.py
 	@# Scippy tests
