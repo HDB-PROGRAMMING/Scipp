@@ -12,4 +12,4 @@
 #endif
 
 #endif
-//Scipp dll utils
+/*Scipp dll utils*/

@@ -1,7 +1,7 @@
 output:
-	@g++ -w -Wall -Wextra -O -ansi -pedantic -fPIC -shared lib/dlls/src/chemistry.hpp -o lib/bins/chemistry.so
+	@gcc -w -Wall -Wextra -O -ansi -pedantic -fPIC -shared lib/dlls/src/types.h -o lib/bins/types.so
 	@gcc -w lib/cli/scipp.c -o lib/bins/scipp
-	@# Dlls build
+	@# C/C++ build
 
 	@python lib/py/setup.py sdist bdist_wheel
 	@# Scippy build

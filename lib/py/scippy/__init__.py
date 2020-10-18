@@ -9,10 +9,12 @@ import os
 if os.name == "ce" or os.name == "nt" or os.name == "dos":
 	SCIPP_PATH  = 'C:\\Scipp\\'
 	SCIPP_MATHS = 'maths.dll'
+	SCIPP_TYPES = 'types.dll'
 
 elif os.name == 'posix':
 	SCIPP_PATH  = '~/Scipp/'
 	SCIPP_MATHS = 'maths.so'
+	SCIPP_TYPES = 'types.so'
 
 else:
 	SCIPP_PATH  = None

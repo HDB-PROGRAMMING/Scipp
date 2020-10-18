@@ -6,14 +6,14 @@
 #else
  #define SCIPP_PATH "/Scipp/"
 #endif
-//Scipp path
+/*Scipp path*/
 
 class scipp_lib {
 protected:
 	void* lib;
 
 public:
-	scipp_lib(str lib) {
+	scipp_lib(char* lib) {
 		this->lib = dlopen(strcat(SCIPP_PATH, lib), RTLD_LAZY);
 
 		if (!this->lib) {
@@ -21,18 +21,24 @@ public:
 			exit(1);
 		}
 	}
-	//scipp_lib constructor
+	/*scipp_lib constructor*/
 
-	value_ptr get_function(str function) {
-		return (value_ptr)dlsym(this->lib, function);
-	}
+	void import(char* lib) {
+		this->lib = dlopen(strcat(SCIPP_PATH, lib), RTLD_LAZY);
 
-	val get_variable(str variable) {
-		return (val)dlsym(this->lib, variable);
+		if (!this->lib) {
+			fputs(dlerror(), stderr);
+			exit(1);
+		}
 	}
-	//Property getters
+	/*Library importer*/
+
+	void* get(char* value) {
+		return (void*)dlsym(this->lib, value);
+	}
+	/*Property getter*/
 };
-//Scipp library class
+/*Scipp library class*/
 
 #endif
-//Scipp import module
+/*Scipp import module*/

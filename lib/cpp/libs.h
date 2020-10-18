@@ -4,18 +4,16 @@
 #include <stdlib.h>
 #include <string.h>
 #include <dlfcn.h>
-
-#include <vector>
-//Extern libraries
+/*Extern libraries*/
 
 #ifdef _WIN32
- #define SCIPP_MATHS     "libs\\maths.dll"
- #define SCIPP_CHEMISTRY "libs\\chemistry.dll"
+ #define SCIPP_MATHS "libs\\maths.dll"
+ #define SCIPP_TYPES "libs\\types.dll"
 #else
- #define SCIPP_MATHS     "libs/maths.dll"
- #define SCIPP_CHEMISTRY "libs/chemistry.dll"
+ #define SCIPP_MATHS "libs/maths.so"
+ #define SCIPP_TYPES "libs/types.so"
 #endif
-//Scipp dlls
+/*Scipp dlls*/
 
 #endif
-// Scipp libs
+/*Scipp libs*/

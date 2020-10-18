@@ -1,9 +1,12 @@
 #include <stdio.h>
+#include <iostream>
 #include "../lib/cpp/Scipp.h"
+
+using namespace std;
 
 int main() {
 	try {
-		byte O = 79;
+		/*byte O = 79;
 		byte K = 75;
 		str end = "!!";
 
@@ -14,7 +17,9 @@ int main() {
 		var d = 0;
 		var e = NULL;
 
-		printf("%c%c%s\n", O, K, end);
+		printf("%c%c%s\n", O, K, end);*/
+
+		printf("OK!!");
 		return 0;
 
 	} catch(std::exception) {

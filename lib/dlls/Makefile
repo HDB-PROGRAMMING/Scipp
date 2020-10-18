@@ -1,3 +1,3 @@
 output:
-	@g++ -w -Wall -Wextra -O -ansi -pedantic -fPIC -shared src/chemistry.hpp -o ../bins/chemistry.so
+	@gcc -w -Wall -Wextra -O -ansi -pedantic -fPIC -shared src/types.h -o ../bins/types.so
 	@# Chemistry library

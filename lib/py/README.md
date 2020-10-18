@@ -1,5 +1,5 @@
 # Scippy, use Scipp on Python
-Scippy is an open API that uses Scipp DLLS (only C programmed libraries, for example not chemistry.so/dll) in Python programming language.
+Scippy is an open API that uses Scipp DLLS in Python programming language with ctypes/cdll Python library.
 
 ## Setting up Scippy
 
@@ -10,7 +10,7 @@ pip install scippy
 ```
 
 ###### Scipp CLI
-First, you need to get the Scipp CLI tool, you can download it by going to https://github.com/HDB-PROGRAMMING/Scipp/releases and getting the latest release as a `.zip` file, then unzip it in `C:\Scipp` if you are in Windows or `~/Scipp` if you are in a UNIX like OS, then go to your PATH variable and add the dir you unzipped Scipp bins. Next go to your command line and type the following command:
+First, you need to get the Scipp CLI tool, you can download it by going to our [releases page](https://github.com/HDB-PROGRAMMING/Scipp/releases) and getting the latest release as a `.zip` file, then unzip it in `C:\Scipp` if you are in Windows or `~/Scipp` if you are in a UNIX like OS, then go to your PATH variable and add the dir you unzipped Scipp bins. Next go to your command line and type the following command:
 ```bash
 scipp init py
 ```
